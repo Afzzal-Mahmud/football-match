@@ -74,6 +74,16 @@ header{
     color: white;
     font-weight: 400;
     font-size: 14px;
+    padding:.5em;
+    transition: all 200ms ease;
+}
+.active{
+    background-color: var(--primary-color);
+    font-weight: 700;
+}
+.primary-nav-links li a:hover{
+    background-color: var(--primary-color);
+    font-weight: 700;
 }
 
 /* navigation button with all default button */
@@ -108,11 +118,20 @@ header{
     line-height: 1.2em;
 }
 
+
 .hero-cta{
     width: 150px;
     margin: 2em 0 3em 0;
     padding: 1em;
     justify-content: space-between;
+    background: #3dbafd;
+    transition: all 250ms ease;
+    color: black;
+    font-weight: 400;
+}
+.hero-cta:hover{
+    background: var(--primary-color,#E02C6D);
+    color: white;
 }
 .hero-img{
     width: 100%;
@@ -122,7 +141,13 @@ header{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
 }
-/* hero section mobile first design end design end */
+/* animation design start for hero image */
+
+.hero:hover .hero-img{
+    transform: rotateX(360deg);
+}
+
+/* hero section mobile first design end */
 
 
 
