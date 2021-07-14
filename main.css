@@ -30,11 +30,11 @@ body{
 } 
 
 /* hide burger menu on desktop */
-.burger{
+/* .burger{
     display: none;
-}
-/* .hide-mobile{
-    display: none !important;
+} */
+/* .hide-desktop{
+    display: none;
 } */
 /* default style end */
 
@@ -141,11 +141,6 @@ header{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
 }
-/* animation design start for hero image */
-
-.hero:hover .hero-img{
-    transform: rotateX(360deg);
-}
 
 /* hero section mobile first design end */
 
@@ -248,4 +243,51 @@ footer{
     padding: .5em;
     margin-bottom: 1.5em;
     cursor: pointer;
+}
+
+/* media queary start */
+
+
+/* medea quary for burger menu */
+@media screen and (min-width:860px){
+    .hide-desktop{
+        display: none;
+    }
+}
+@media screen and (max-width:860px){
+   .hide-mobile{
+       display: none;
+   } 
+   .hide-desktop{
+       display: block;
+   }
+}
+
+/* fix hero image and full hero section  */
+@media screen and (min-width:556px) and (max-width:696px) {
+ .hero-title{
+     font-size: 2.5em;
+ }
+    .hero-img{
+     transform: translateY(4em);
+     width: 110%;
+ }
+}
+
+@media screen and (min-width:900px){
+    .hero-left-col{
+        transform: translateY(2em);
+    }
+}
+@media screen and (min-width:1024px){
+    .hero-img{
+        width: 90%;
+    }
+}
+
+/* fix upcomming matches section */
+@media screen and (min-width:630px){
+    .card__wrapper__matches{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
