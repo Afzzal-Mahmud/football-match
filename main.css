@@ -1,0 +1,121 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* start up with some default style */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root{
+    --primary-color:#E02C6D;
+    --background-color:#2D25A0;
+    --dark:#05070f;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+} 
+
+/* hide burger menu on desktop */
+.burger{
+    display: none;
+}
+/* .hide-mobile{
+    display: none !important;
+} */
+/* default style end */
+
+
+header,.hero{
+    background-color: var(--background-color,#2D25A0);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    min-height: 8vh;
+    align-items: center;
+    position: relative;
+}
+/* hamburger menu with css */
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: var(--primary-color,hotpink);
+    margin: 5px;
+    align-items: center;
+}
+.burger div{
+    cursor: pointer;
+}
+/* navigation start */
+header{
+    padding: 1.5em 0;
+}
+.primary-nav-links{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+.primary-nav-links li a{
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* navigation button with all default button */
+.cta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: .25em 1em;
+    color: white;
+    font-weight: 400;
+    background-color: var(--primary-color,#E02C6D);
+    border-radius: 3px;
+}
+.nav-cta{
+    width: 130px;
+    padding: .8em 1.8em;
+}
+
+/* hero section start with mobile first development*/
+.hero{
+    padding: 3em 0;
+}
+.hero-left-col{
+    padding-top: 2em;
+}
+.hero-title{
+    font-weight: 700;
+    font-size: 3em;
+    color: white;
+    line-height: 1.2em;
+}
+
+.hero-cta{
+    width: 150px;
+    margin: 2em 0 3em 0;
+    padding: 1em;
+}
+.hero-img{
+    width: 100%;
+}
+/* this autofit magic save the harassment of medea query */
+#hero-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+/* hero section mobile first design end design end */
+
+
