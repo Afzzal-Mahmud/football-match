@@ -16,6 +16,10 @@
     --dark:#05070f;
 }
 
+.flow >*+*{
+    margin-top: 1em;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -75,8 +79,8 @@ header{
 /* navigation button with all default button */
 .cta{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
     text-align: center;
     padding: .25em 1em;
     color: white;
@@ -87,6 +91,7 @@ header{
 .nav-cta{
     width: 130px;
     padding: .8em 1.8em;
+    justify-content: space-between;
 }
 
 /* hero section start with mobile first development*/
@@ -107,6 +112,7 @@ header{
     width: 150px;
     margin: 2em 0 3em 0;
     padding: 1em;
+    justify-content: space-between;
 }
 .hero-img{
     width: 100%;
@@ -135,5 +141,9 @@ section.player-section{
 }
 #card__img{
     max-width: 100%;
+}
+.card__cta{
+    text-align: center !important;
+    font-weight: 700;
 }
 
