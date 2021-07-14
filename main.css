@@ -146,10 +146,30 @@ section.player-section{
     text-align: center !important;
     font-weight: 700;
 }
+/* upcomming match section */
+.card__wrapper__matches{
+    display: grid;
+}
+.card__title__match{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+}
+.card__info__match{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.vs{
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--primary-color,#E02C6D);
+    transform: translateY(-.5em);
+}
 
 
 /* contact section */
-.contact-title{
+.contact-title,.title{
     text-align: center;
     margin:2.5em 0;
 }
