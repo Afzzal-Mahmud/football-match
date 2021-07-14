@@ -13,9 +13,9 @@
 :root{
     --primary-color:#E02C6D;
     --background-color:#2D25A0;
-    --dark:#05070f;
 }
-
+/* for doing margin top except first child */
+/* utility class */
 .flow >*+*{
     margin-top: 1em;
 }
@@ -28,16 +28,6 @@ body{
     width: 90%;
     margin: 0 auto;
 } 
-
-/* hide burger menu on desktop */
-/* .burger{
-    display: none;
-} */
-/* .hide-desktop{
-    display: none;
-} */
-/* default style end */
-
 
 header,.hero{
     background-color: var(--background-color,#2D25A0);
@@ -117,8 +107,7 @@ header{
     color: white;
     line-height: 1.2em;
 }
-
-
+/* hero section button */
 .hero-cta{
     width: 150px;
     margin: 2em 0 3em 0;
@@ -228,7 +217,7 @@ iframe{
 
 /* footer */
 footer{
-    margin-top: 3em;
+    margin-top: 2em;
     text-align: center;
 }
 #footer-img{
@@ -289,5 +278,33 @@ footer{
 @media screen and (min-width:630px){
     .card__wrapper__matches{
         grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/* fixing contact section */
+
+@media screen and (min-width:800px){
+    .contact-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .contact-left-col,.contact-right{
+        margin: 1.5em;
+    }
+    .contact-right{
+        height: 80%;
+    }
+    .contact-right iframe{
+        height: 80%;
+    }
+
+    /* footer fix */
+
+    footer{
+        margin-top: -1em;
+    }
+
+    #footer-img{
+        width: 50%;
     }
 }
