@@ -119,3 +119,21 @@ header{
 /* hero section mobile first design end design end */
 
 
+
+/* player card section start with mobile first */
+section.player-section{
+    background: white;
+}
+.card__wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+.card__container{
+    box-shadow: 0px 2px 8px 0px rgb(199, 208, 221);
+    margin: 1em;
+    padding: 1em;
+}
+#card__img{
+    max-width: 100%;
+}
+
